@@ -29,7 +29,7 @@ descripción: "Plano arquitectónico maestro (SSOT) para el desarrollo del SaaS 
 > The LLM must strictly adhere to these constraints when suggesting code, architectures, or tools.
 > * **Budget:** $0.00 initial budget. Absolutely no paid services, hidden fees, or credit card requirements for the MVP.
 > * **Hardware:** The developer operates on an Ubuntu machine with exactly **8GB of RAM**.
-> * **Development Environment:** [[Google_Antigravity]] (Agentic IDE).
+> * **Development Environment:** [[Antigravity|Google_Antigravity]] (Agentic IDE).
 > * *Rule:* Do not suggest running heavy local LLMs (like Ollama/Qwen) as they will crash the 8GB RAM machine.
 > * *Rule:* Do not suggest Firebase Studio (Project IDX) due to the "Blaze Trap" (forced billing for backend functions).
 > * **Time:** The developer is a solo "indie hacker" dedicating 1 hour per day. Code generation must rely heavily on AI agents.
@@ -67,7 +67,7 @@ The project has been initialized locally in the `NexoContable` directory. The st
 ---
 
 ## 5. AI Agent Workflow Protocol
-When the developer requests code generation via [[Google_Antigravity]], the LLM must follow these model-selection rules:
+When the developer requests code generation via [[Antigravity|Google_Antigravity]], the LLM must follow these model-selection rules:
 * **For Complex Tasks:** Use `gemini 3.1 pro high` in **Planning Mode**. The agent must write a plan, execute terminal commands, and verify via internal browser screenshots.
 * **For Simple Tasks:** Use `gemini 3 flash` in **Fast Mode** to conserve weekly API quotas.
 * **Context Awareness:** The LLM must read the local file system to understand the context. Do not rely on chat history.
