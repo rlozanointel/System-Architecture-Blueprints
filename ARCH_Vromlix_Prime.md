@@ -17,7 +17,7 @@ descripción: "Plano arquitectónico maestro (SSOT) para el sistema operativo co
 ## 1. Project Overview & Business Logic
 * **Project Name:** Vromlix Prime (v6.1.1 Genesis)
 * **Type:** Cognitive Operating System / Multi-Agent Orchestrator
-* **Core Value Proposition:** A deterministic, local-first AI orchestrator that bridges the gap between industrial process rigor ([[ISO_9001]], [[Six_Sigma]]) and probabilistic Large Language Models. It eliminates LLM hallucinations, automates OSINT data pipelines, and manages complex code refactoring through a highly secure, mathematically verifiable architecture.
+* **Core Value Proposition:** A deterministic, local-first AI orchestrator that bridges the gap between industrial process rigor ([[ISO_9001]], [[Six_Sigma_DMAIC]]) and probabilistic Large Language Models. It eliminates LLM hallucinations, automates OSINT data pipelines, and manages complex code refactoring through a highly secure, mathematically verifiable architecture.
 * **Target Audience:**
 	* **Internal Use:** Personal Knowledge Graph management, automated job hunting (Fábrica de Empleo), and continuous codebase refactoring.
 	* **Enterprise Application:** A blueprint for startups needing $0 CapEx, high-throughput AI orchestration without relying on expensive, bloated frameworks like LangChain or LlamaIndex.
@@ -38,7 +38,7 @@ descripción: "Plano arquitectónico maestro (SSOT) para el sistema operativo co
 > [!info] Justificación Arquitectónica
 > This stack prioritizes edge execution, deterministic routing, and zero-latency memory retrieval.
 
-* **Core Engine:** [[Python_3.12]].
+* **Core Engine:** [[Python]].
 * **LLM Orchestration:** `google-genai` SDK (Gemini 3.0 Flash for routing/ETL; Gemini 3.0 Pro for deep reasoning).
 * **Edge AI (Local Inference):** `llama-cpp-python` running Microsoft Phi-4.
 	* *Optimization:* 8-bit Key-Value (KV) Cache quantization to fit within the 8GB RAM constraint.
